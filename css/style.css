@@ -419,11 +419,22 @@ header .upper-nav {
   border: cornsilk 0.5px solid;
 }
 
-footer .social-links {
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 150px;
   width: 100%;
   background: #131313;
  
+}
+
+footer .social-links {
+  display: flex;
+}
+
+footer .footer-menu-links{
+  display: flex;
 }
 
 
