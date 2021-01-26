@@ -423,18 +423,32 @@ footer .footer-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150px;
-  width: 100%;
   background: #131313;
  
 }
 
 footer .social-links {
   display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  font-size: 1.1rem;
 }
 
 footer .footer-menu-links{
-  display: flex;
+  display: flex;  
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+footer .social-links li {
+  border-radius: 50%;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #333;
+  margin: 0 10px;
 }
 
 
