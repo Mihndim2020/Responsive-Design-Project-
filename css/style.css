@@ -419,8 +419,11 @@ header .upper-nav {
   border: cornsilk 0.5px solid;
 }
 
-footer {
-  height: 20px;
-  background-color: black;
-  margin-bottom: 20px;
+footer .social-links {
+  height: 150px;
+  width: 100%;
+  background: #131313;
+ 
 }
+
+
