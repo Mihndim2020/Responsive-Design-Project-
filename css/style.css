@@ -445,7 +445,10 @@ footer .footer-menu-links li a{
   text-decoration: none;
   color: #aaa;
   font-weight: 500;
-  /* margin-top: -15px; */
+}
+
+footer .footer-menu-links li a:hover {
+  color: white;
 }
 
 footer .social-links li {
@@ -465,5 +468,11 @@ footer .social-links li:hover {
 
 footer .social-links li a {
   text-decoration: none;
+  color: white;
+}
+
+.footer-copyright {
+  height: 120px;
+  background-color: black;
   color: white;
 }
