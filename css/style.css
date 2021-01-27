@@ -17,7 +17,7 @@ header {
 
 /* add mobile nav-bar */
 
-header .mobile-nav {  
+header .mobile-nav {
   width: 100%;
   height: 50px;
   background-image: linear-gradient(#fdfdfd, #fdfdfd);
@@ -28,11 +28,13 @@ header .mobile-nav {
   height: 100%;
   margin: 0;
 }
+
 /* float icons to right */
 .right-icons {
   float: right;
   border-left: 0.3px solid #ebebeb;
 }
+
 /* end of mobile nav-bar */
 
 /* start of display bar */
@@ -77,14 +79,13 @@ header .upper-nav {
     position: absolute;
     left: -999999px;
   }
+
   /* taking out the lower nav-bar in mobile view */
   .lower-nav-bar {
     position: absolute;
     left: -999999px;
   }
 }
-
-
 
 .grid-rows::after {
   content: "";
@@ -97,13 +98,14 @@ header .upper-nav {
 [class*="col-"] {
   float: left;
   padding: 15px;
+  width: 100%;
 }
 
 /* this is for mobile phones  */
 
-[class*="col-"] {
+/* [class*="col-"] {
   width: 100%;
-}
+} */
 
 /* this is for tablets */
 
@@ -284,6 +286,7 @@ header .upper-nav {
     text-decoration: underline;
   }
 }
+
 /* the lower-nav bar */
 
 @media only screen and (min-width: 768px) {
@@ -335,7 +338,7 @@ header .upper-nav {
 @media only screen and (min-width: 1024px) {
   /* to make the logo disappear */
   .lower-nav-bar .mid-nav-logo {
-    height: 0px;
+    height: 0;
   }
 
   header .upper-nav {
@@ -356,7 +359,8 @@ header .upper-nav {
 /* styling the hero area */
 
 .bigger-left {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
+  background-image:
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
     url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/the-medium-feat-img-796x417.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,6 +429,7 @@ header .upper-nav {
   top: 55px;
   left: 5px;
 }
+
 .tittle-idexco {
   font-size: 2rem;
   font-weight: 700;
@@ -433,14 +438,14 @@ header .upper-nav {
   padding-bottom: 10px;
   cursor: pointer;
   text-align: right;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   background-color: #f42;
   color: white;
-
 }
+
 .price {
   background-color: #ffebe7;
-  cursor: pointer; 
+  cursor: pointer;
   text-align: center;
   padding: 10px;
 }
@@ -448,22 +453,19 @@ header .upper-nav {
 .price-tags {
   padding: 15px 0;
   cursor: pointer;
-
 }
 
 .latest-funding-rounds hr {
-  border-top: 1px solid #FF4421;
+  border-top: 1px solid #ff4421;
 }
 
 .tittle-idexco h3 {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
   margin-left: 90px;
-  padding-bottom: 10px;
-  
-  cursor: pointer;
   padding: 10px 0;
-
+  padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .tech-news {
@@ -479,7 +481,6 @@ header .upper-nav {
 .tech-news img {
   width: 100%;
   height: auto;
-
 }
 
 .latest-deals {
@@ -523,10 +524,21 @@ footer .footer-menu-links li {
   padding-right: 15px;
 }
 
+.footer-copyright a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}
+
 footer .footer-menu-links li a {
   text-decoration: none;
   color: #aaa;
   font-weight: 500;
+}
+
+footer .social-links li a {
+  text-decoration: none;
+  color: white;
 }
 
 footer .footer-menu-links li a:hover {
@@ -548,11 +560,6 @@ footer .social-links li:hover {
   background-color: transparent;
 }
 
-footer .social-links li a {
-  text-decoration: none;
-  color: white;
-}
-
 .footer-copyright {
   display: flex;
   flex-direction: row;
@@ -566,14 +573,10 @@ footer .social-links li a {
 .footer-copyright img {
   height: 1.7rem;
 }
-.footer-copyright a {
-  text-decoration: none;
-  color: white;
-  font-weight: 900;
-}
+
 
 /* this is just for displaying purposes  */
 h2 {
-font-size: 18px;
- color: red;
+  font-size: 18px;
+  color: red;
 }
