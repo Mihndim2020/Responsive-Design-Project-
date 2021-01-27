@@ -426,12 +426,17 @@ header .upper-nav {
 }
 
 .latest-deals {
-  background-color: violet;
+  /* background-color: violet; */
   margin-bottom: 20px;
 }
 
+.latest-deals img{
+  width: 100%;
+  height: 50%;
+}
+
 .latest-deals-items {
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   border: cornsilk 0.5px solid;
 }
 
