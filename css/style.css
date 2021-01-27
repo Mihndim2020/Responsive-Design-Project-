@@ -17,7 +17,7 @@ header {
 
 /* add mobile nav-bar */
 
-header .mobile-nav {
+header .mobile-nav {  
   width: 100%;
   height: 50px;
   background-image: linear-gradient(#fdfdfd, #fdfdfd);
@@ -394,7 +394,6 @@ header .upper-nav {
   color: white;
 }
 
-
 .latest-news {
   /* background-color: white; */
   margin-bottom: 10px;
@@ -406,13 +405,62 @@ header .upper-nav {
 }
 
 .latest-funding-rounds {
-  background-color: darkslategrey;
+  /* background-color: darkslategrey; */
   margin-bottom: 20px;
 }
 
 .latest-funding-rounds-items {
-  background-color: forestgreen;
+  /* background-color: forestgreen; */
   border: cornsilk 0.5px solid;
+}
+
+.latest-funding-rounds-items img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin-top: -75px;
+  top: 55px;
+  left: 5px;
+}
+.tittle-idexco {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+  cursor: pointer;
+  text-align: right;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f42;
+  color: white;
+
+}
+.price {
+  background-color: #ffebe7;
+  cursor: pointer; 
+  text-align: center;
+  padding: 10px;
+}
+
+.price-tags {
+  padding: 15px 0;
+  cursor: pointer;
+
+}
+
+.latest-funding-rounds hr {
+  border-top: 1px solid #FF4421;
+}
+
+.tittle-idexco h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  margin-left: 90px;
+  padding-bottom: 10px;
+  
+  cursor: pointer;
+  padding: 10px 0;
+
 }
 
 .tech-news {
@@ -430,7 +478,7 @@ header .upper-nav {
   margin-bottom: 20px;
 }
 
-.latest-deals img{
+.latest-deals img {
   width: 100%;
   height: 50%;
 }
