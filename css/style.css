@@ -84,6 +84,8 @@ header .upper-nav {
   }
 }
 
+
+
 .grid-rows::after {
   content: "";
   clear: both;
@@ -411,6 +413,7 @@ header .upper-nav {
 
 .latest-funding-rounds-items {
   /* background-color: forestgreen; */
+  padding: 30px;
   border: cornsilk 0.5px solid;
 }
 
@@ -464,13 +467,19 @@ header .upper-nav {
 }
 
 .tech-news {
-  background-color: fuchsia;
+  /* background-color: fuchsia; */
   margin-bottom: 20px;
 }
 
 .tech-news-items {
-  background-color: rgb(17, 54, 17);
+  /* background-color: rgb(17, 54, 17); */
   border: cornsilk 0.5px solid;
+}
+
+.tech-news img {
+  width: 100%;
+  height: auto;
+
 }
 
 .latest-deals {
@@ -561,4 +570,10 @@ footer .social-links li a {
   text-decoration: none;
   color: white;
   font-weight: 900;
+}
+
+/* this is just for displaying purposes  */
+h2 {
+font-size: 18px;
+ color: red;
 }
