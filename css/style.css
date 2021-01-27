@@ -31,7 +31,7 @@ header .mobile-nav {
 /* float icons to right */
 .right-icons {
   float: right;
-  border-left: .3px solid #ebebeb;
+  border-left: 0.3px solid #ebebeb;
 }
 /* end of mobile nav-bar */
 
@@ -47,23 +47,20 @@ header .display-bar {
 /* reducing the size of the yellow display bar for desktop view */
 
 @media only screen and (min-width: 768px) {
-  header .display-bar {    
-    height: 30px;    
+  header .display-bar {
+    height: 30px;
   }
-  
 }
-
 
 /* center display bar text */
 
-.display-text {  
+.display-text {
   display: block;
   margin: auto;
-  width: 90%;  
+  width: 90%;
   padding: 10px;
   white-space: nowrap;
-  font-size: 0.8rem;  
-
+  font-size: 0.8rem;
 }
 
 header .upper-nav {
@@ -74,26 +71,26 @@ header .upper-nav {
 
 /* remove upper-nav from the flow */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   /* taking out the upper nav-bar in mobile view */
   .upper-nav {
     position: absolute;
-      left: -999999px;
-  } 
-/* taking out the lower nav-bar in mobile view */
+    left: -999999px;
+  }
+  /* taking out the lower nav-bar in mobile view */
   .lower-nav-bar {
     position: absolute;
     left: -999999px;
   }
-  
 }
 
 .grid-rows::after {
   content: "";
   clear: both;
-  /* display: table; */
-  display: grid;
+  display: table;
 }
+
+/* giving each section container a display of grid */
 
 [class*="col-"] {
   float: left;
@@ -240,16 +237,15 @@ header .upper-nav {
   /* removing the mobile view */
 
   .mobile-nav {
-    position: absolute;  left: -999999px;
+    position: absolute;
+    left: -999999px;
   }
 
-
- 
   /* nav-bar for tablet and desktop view */
   header .upper-nav {
     background: #131313;
-    display: flex;  
-    justify-content: space-between;     
+    display: flex;
+    justify-content: space-between;
     line-height: 40px;
     max-height: 40px;
     width: 100%;
@@ -272,11 +268,11 @@ header .upper-nav {
     justify-content: space-around;
   }
 
-  .upper-nav ul {    
+  .upper-nav ul {
     list-style: none;
   }
-  
-  .upper-nav ul a {   
+
+  .upper-nav ul a {
     color: rgb(226, 206, 206);
     text-decoration: none;
   }
@@ -285,9 +281,6 @@ header .upper-nav {
     color: white;
     text-decoration: underline;
   }
-
-  
-  
 }
 /* the lower-nav bar */
 
@@ -306,21 +299,18 @@ header .upper-nav {
     align-items: center;
     width: 100%;
     z-index: 5;
-
   }
 
- 
-  .lower-nav-bar ul{
+  .lower-nav-bar ul {
     display: flex;
     justify-content: flex-start;
-    font-family: Shentox,sans-serif;
+    font-family: Shentox, sans-serif;
     color: #aaa;
     font-weight: 500;
-    font-size: .8rem;
+    font-size: 0.8rem;
     align-items: center;
     width: 100%;
     z-index: 5;
-
   }
 
   .lower-nav-bar ul li {
@@ -337,21 +327,19 @@ header .upper-nav {
   .lower-nav-bar ul li a:hover {
     color: #131313;
   }
-
 }
 
 /* navigation bar for desktop */
 @media only screen and (min-width: 1024px) {
- /* to make the logo disappear */
- .lower-nav-bar .mid-nav-logo {
-  height: 0px;  
-}
+  /* to make the logo disappear */
+  .lower-nav-bar .mid-nav-logo {
+    height: 0px;
+  }
 
-header .upper-nav {
- /* this is to move the top bar to the left */
-  padding: 0 15px 0 10px;  
-}
-
+  header .upper-nav {
+    /* this is to move the top bar to the left */
+    padding: 0 15px 0 10px;
+  }
 }
 
 /* just for mapping out the page  */
@@ -360,19 +348,49 @@ header .upper-nav {
 
 .hero-area {
   display: grid;
+  background-color: white;
 }
 
-.item1 {
-  background-color: rgb(213, 123, 224);
+/* styling the hero area */
+
+.bigger-left {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/the-medium-feat-img-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.item2 {
-  background-color: rgb(49, 58, 8);
+/* left top and left botto to be edited */
+
+
+
+.bigger-left h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
-.item3 {
-  background-color: brown;
+.top-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
+.top-hero p {
+  color: white;
+}
+
+.bottom-hero p {
+  color: white;
+}
+
 
 .latest-news {
   background-color: rgb(105, 43, 92);
@@ -419,7 +437,6 @@ footer .footer-links {
   flex-direction: column;
   align-items: center;
   background: #131313;
- 
 }
 
 footer .social-links {
@@ -431,7 +448,7 @@ footer .social-links {
 }
 
 footer .footer-menu-links {
-  display: flex;  
+  display: flex;
   align-items: center;
   padding: 30px;
 }
@@ -441,7 +458,7 @@ footer .footer-menu-links li {
   padding-right: 15px;
 }
 
-footer .footer-menu-links li a{
+footer .footer-menu-links li a {
   text-decoration: none;
   color: #aaa;
   font-weight: 500;
