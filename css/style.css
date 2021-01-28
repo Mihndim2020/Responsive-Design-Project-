@@ -361,7 +361,7 @@ header .upper-nav {
 
 /* navigation bar for desktop */
 @media only screen and (min-width: 1024px) {
-    .lower-nav-bar .mid-nav-logo {
+  .lower-nav-bar .mid-nav-logo {
     height: 0;
   }
 
