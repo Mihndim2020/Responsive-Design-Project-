@@ -4,9 +4,9 @@
 
 > This project is a clone of thenextweb website. The objectives to the project is to apply the principles of responsive design. 
 
-![screenshot](images/responsive-img1)
-![screenshot](images/responsive-img1)
-![screenshot](images/responsive-img1)
+![screenshot](images/responsive-img1.png)
+![screenshot](images/responsive-img2.png)
+![screenshot](images/responsive-img3.png)
 
 Additional description about the project and its features.
 
