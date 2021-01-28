@@ -382,8 +382,7 @@ header .upper-nav {
 /* styling the hero area */
 
 .bigger-left {
-  background-image:
-    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
     url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/the-medium-feat-img-796x417.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -424,12 +423,27 @@ header .upper-nav {
 }
 
 .latest-news {
-  /* background-color: white; */
+  /* background-color: brown; */
   margin-bottom: 10px;
+}
+
+.latest-news img {
+  width: 100%;
+  height: 50%;
+}
+
+.latest-news h3 {
+  margin: 5px 0;
 }
 
 .latest-news a {
   font-weight: 700;
+}
+
+.latest-news p {
+  font-family: "Open Sans", sans-serif;
+  margin: 4px 0;
+  font-size: 0.7rem;
 }
 
 .latest-news a:hover {
@@ -439,6 +453,23 @@ header .upper-nav {
 .latest-news .latest-news-items {
   /* background-color: white */
   border: cornsilk 0.5px solid;
+}
+
+/* making the latest news section responsive on mobile */
+@media only screen and (max-width: 768px) {
+  .latest-news figure {
+    display: flex;
+  }
+
+  .latest-news img {
+    width: 10vw;
+    height: 5vh;
+    margin: 5px;
+  }
+
+  .section-headings {
+    margin: 30px;
+  }
 }
 
 .latest-funding-rounds {
@@ -496,6 +527,11 @@ header .upper-nav {
   margin-left: 90px;
   padding: 10px 0;
   padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.indexco-footer {
+  font-size: 0.8rem;
   cursor: pointer;
 }
 
@@ -604,7 +640,6 @@ footer .social-links li:hover {
 .footer-copyright img {
   height: 1.7rem;
 }
-
 
 /* this is just for displaying purposes  */
 h2 {
