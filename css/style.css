@@ -8,6 +8,11 @@ body {
   line-height: 1.4;
 }
 
+a {
+  color: #131313;
+  text-decoration: none;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -17,6 +22,20 @@ header {
   padding: 0;
   margin: 0 auto;
   z-index: 15;
+}
+
+/* style the section headings  */
+
+.section-headings {
+  font-size: 2rem;
+  color: red;
+  font-weight: 800;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.section-headings:hover {
+  color: black;
 }
 
 /* add mobile nav-bar */
@@ -407,6 +426,14 @@ header .upper-nav {
 .latest-news {
   /* background-color: white; */
   margin-bottom: 10px;
+}
+
+.latest-news a {
+  font-weight: 700;
+}
+
+.latest-news a:hover {
+  color: red;
 }
 
 .latest-news .latest-news-items {
