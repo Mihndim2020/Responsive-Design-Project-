@@ -1,0 +1,738 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+a {
+  color: #131313;
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 120px;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 15;
+}
+
+/* style the section headings  */
+
+.section-headings {
+  font-size: 2rem;
+  color: red;
+  font-weight: 800;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.section-headings:hover {
+  color: black;
+}
+
+/* add mobile nav-bar */
+
+header .mobile-nav {
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(#fdfdfd, #fdfdfd);
+}
+
+/* icons for mobile nav-bar */
+.mobile-nav img {
+  height: 100%;
+  margin: 0;
+}
+
+/* float icons to right */
+.right-icons {
+  float: right;
+  border-left: 0.3px solid #ebebeb;
+}
+
+/* end of mobile nav-bar */
+
+/* start of display bar */
+header .display-bar {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: yellow;
+  justify-content: center;
+}
+
+/* reducing the size of the yellow display bar for desktop view */
+
+@media only screen and (min-width: 768px) {
+  header .display-bar {
+    height: 30px;
+  }
+}
+
+/* center display bar text */
+
+.display-text {
+  display: block;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+header .upper-nav {
+  width: 100%;
+  height: 35px;
+  background-color: #fdfdfd;
+}
+
+/* remove upper-nav from the flow */
+
+@media only screen and (max-width: 768px) {
+  .upper-nav {
+    position: absolute;
+    left: -999999px;
+  }
+
+  /* taking out the lower nav-bar in mobile view */
+  .lower-nav-bar {
+    position: absolute;
+    left: -999999px;
+  }
+}
+
+.grid-rows::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* giving each section container a display of grid */
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+/* this is for mobile phones  */
+
+@media only screen and (max-width: 1024px) {
+  .top-hero .logo {
+    height: 0;
+  }
+}
+
+/* this is for tablets */
+
+@media only screen and (min-width: 768px) {
+  .col-tab-1 {
+    width: 8.33%;
+  }
+
+  .col-tab-2 {
+    width: 16.66%;
+  }
+
+  .col-tab-3 {
+    width: 25%;
+  }
+
+  .col-tab-4 {
+    width: 33.33%;
+  }
+
+  .col-tab-5 {
+    width: 41.66%;
+  }
+
+  .col-tab-6 {
+    width: 50%;
+  }
+
+  .col-tab-7 {
+    width: 58.33%;
+  }
+
+  .col-tab-8 {
+    width: 66.66%;
+  }
+
+  .col-tab-9 {
+    width: 75%;
+  }
+
+  .col-tab-10 {
+    width: 83.33%;
+  }
+
+  .col-tab-11 {
+    width: 91.66%;
+  }
+
+  .col-tab-12 {
+    width: 100%;
+  }
+}
+
+/* this is for desktop view  */
+@media only screen and (min-width: 1024px) {
+  .col-desk-1 {
+    width: 8.33%;
+  }
+
+  .col-desk-2 {
+    width: 16.66%;
+  }
+
+  .col-desk-3 {
+    width: 25%;
+  }
+
+  .col-desk-4 {
+    width: 33.33%;
+  }
+
+  .col-desk-5 {
+    width: 41.66%;
+  }
+
+  .col-desk-6 {
+    width: 50%;
+  }
+
+  .col-desk-7 {
+    width: 58.33%;
+  }
+
+  .col-desk-8 {
+    width: 66.66%;
+  }
+
+  .col-desk-9 {
+    width: 75%;
+  }
+
+  .col-desk-10 {
+    width: 83.33%;
+  }
+
+  .col-desk-11 {
+    width: 91.66%;
+  }
+
+  .col-desk-12 {
+    width: 100%;
+  }
+}
+
+/* added media queries for hero area */
+
+@media only screen and (min-width: 768px) {
+  .hero-area {
+    display: grid;
+    grid-template-columns: 66.66% 33.33%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "item1 item2" "item1 item3";
+    grid-gap: 5px;
+    background-color: rgb(43, 226, 89);
+    margin-bottom: 20px;
+  }
+
+  .item1 {
+    grid-area: item1;
+    background-color: darkkhaki;
+  }
+
+  .item2 {
+    grid-area: item2;
+    background-color: rgb(13, 5, 32);
+  }
+
+  .item3 {
+    grid-area: item3;
+    background-color: brown;
+  }
+
+  /* removing the mobile view */
+
+  .mobile-nav {
+    position: absolute;
+    left: -999999px;
+  }
+
+  /* nav-bar for tablet and desktop view */
+  header .upper-nav {
+    background: #131313;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    max-height: 40px;
+    width: 100%;
+    color: white;
+    padding: 0 15px 0 110px;
+    font-size: 0.8rem;
+  }
+
+  .nav-bar-left {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+  }
+
+  .nav-bar-right {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-around;
+  }
+
+  .upper-nav ul {
+    list-style: none;
+  }
+
+  .upper-nav ul a {
+    color: rgb(226, 206, 206);
+    text-decoration: none;
+  }
+
+  .upper-nav ul a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+/* the lower-nav bar */
+
+@media only screen and (min-width: 768px) {
+  .lower-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .sticky-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .lower-nav-bar ul {
+    display: flex;
+    justify-content: flex-start;
+    font-family: Shentox, sans-serif;
+    color: #aaa;
+    font-weight: 500;
+    font-size: 0.8rem;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .lower-nav-bar ul li {
+    list-style: none;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+
+  .lower-nav-bar ul li a {
+    text-decoration: none;
+    color: #aaa;
+  }
+
+  .lower-nav-bar ul li a:hover {
+    color: #131313;
+  }
+}
+
+/* navigation bar for desktop */
+@media only screen and (min-width: 1024px) {
+  .lower-nav-bar .mid-nav-logo {
+    height: 0;
+  }
+
+  header .upper-nav {
+    /* this is to move the top bar to the left */
+    padding: 0 15px 0 10px;
+  }
+}
+
+/* just for mapping out the page  */
+
+/* added default mobile view */
+
+.hero-area {
+  display: grid;
+  background-color: white;
+}
+
+/* styling the hero area */
+
+.bigger-left {
+  background-image:
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/the-medium-feat-img-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* left top and left botto to be edited */
+
+.bigger-left h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.top-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top-hero p {
+  color: white;
+}
+
+.bottom-hero p {
+  color: white;
+}
+
+.latest-news {
+  margin-bottom: 10px;
+}
+
+.latest-news img {
+  width: 100%;
+  height: 50%;
+  cursor: pointer;
+}
+
+.latest-news h3,
+.latest-deals p {
+  margin: 5px 0;
+}
+
+.latest-news a,
+.p1 a {
+  font-weight: 700;
+}
+
+.latest-news p,
+.p1 {
+  font-family: "Open Sans", sans-serif;
+  margin: 4px 0;
+  font-size: 0.7rem;
+}
+
+.footer-copyright a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}
+
+footer .footer-menu-links li a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 500;
+}
+
+footer .social-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.latest-news a:hover,
+.latest-deals a:hover {
+  color: red;
+}
+
+.latest-news .latest-news-items {
+  border: cornsilk 0.5px solid;
+}
+
+/* making the latest news section responsive on mobile */
+
+@media only screen and (max-width: 768px) {
+  .latest-news figure {
+    display: flex;
+  }
+
+  .latest-news img {
+    width: 10vw;
+    height: 5vh;
+    margin: 5px;
+  }
+
+  .section-headings {
+    margin: 30px;
+  }
+}
+
+.latest-funding-rounds {
+  margin-bottom: 20px;
+}
+
+.latest-funding-rounds-items {
+  padding: 30px;
+  border: cornsilk 0.5px solid;
+}
+
+.latest-funding-rounds-items img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin-top: -75px;
+  top: 55px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.tittle-idexco {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #f42;
+  color: white;
+}
+
+.price {
+  background-color: #ffebe7;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+.price-tags {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.latest-funding-rounds hr {
+  border-top: 1px solid #ff4421;
+}
+
+.indexco-footer {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.tech-news {
+  /* background-color: fuchsia; */
+  margin-bottom: 20px;
+}
+
+.tech-news .image-area {
+  width: 100%;
+  height: 30vh;
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1280px-GameStop_Globen-e1611550531323-368x276.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.image-area .title-msg {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.image-area .middle-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.image-area .footer-text {
+  color: white;
+  font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.tech-news .text-thumbnail {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+  position: relative;
+  background-color: #fff4f2;
+  color: red;
+}
+
+.tech-news h3 {
+  margin: 10px;
+}
+
+.tech-news p {
+  margin: 10px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.tech-news p:hover {
+  text-decoration: underline;
+}
+
+.tech-news img {
+  display: block;
+  width: 8vw;
+  height: 8vh;
+  float: right;
+}
+
+.tech-news ul {
+  padding: 20px;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+.tech-news ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.tech-news ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.tech-news-items {
+  /* background-color: rgb(17, 54, 17); */
+  border: cornsilk 0.5px solid;
+}
+
+.latest-deals {
+  /* background-color: violet; */
+  margin-bottom: 20px;
+}
+
+.latest-deals img {
+  width: 100%;
+  height: 50%;
+  cursor: pointer;
+}
+
+.latest-deals h3 {
+  font-weight: 700;
+}
+
+.latest-deals-items {
+  /* background-color: yellowgreen; */
+  border: cornsilk 0.5px solid;
+}
+
+@media only screen and (max-width: 768px) {
+  .latest-deals figure {
+    display: flex;
+  }
+
+  .latest-deals img {
+    width: 15vw;
+    height: 10vh;
+    margin-right: 5px;
+  }
+
+  .section-headings {
+    margin: 30px;
+  }
+}
+
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #131313;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+footer .footer-menu-links {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+footer .footer-menu-links li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer .footer-menu-links li a:hover {
+  color: white;
+}
+
+footer .social-links li {
+  border-radius: 50%;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #333;
+  margin: 0 10px;
+}
+
+footer .social-links li:hover {
+  background-color: transparent;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: black;
+  color: white;
+}
+
+.footer-copyright img {
+  height: 1.7rem;
+}
+
+/* this is just for displaying purposes  */
+h2 {
+  font-size: 18px;
+  color: red;
+}
