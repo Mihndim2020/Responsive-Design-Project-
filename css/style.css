@@ -699,11 +699,11 @@ footer .footer-menu-links {
   display: flex;
   align-items: center;
   padding: 30px;
-}
 
-footer .footer-menu-links li {
-  padding-left: 15px;
-  padding-right: 15px;
+  li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 footer .footer-menu-links li a:hover {
