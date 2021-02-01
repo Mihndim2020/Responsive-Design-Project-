@@ -342,13 +342,20 @@ header .upper-nav {
     align-items: center;
     width: 100%;
     z-index: 5;
+
+    li {
+      list-style: none;
+      margin: 0 10px;
+      white-space: nowrap; /* implementation of nesting */
+    }
   }
 
+  /*
   .lower-nav-bar ul li {
     list-style: none;
     margin: 0 10px;
     white-space: nowrap;
-  }
+  } */
 
   .lower-nav-bar ul li a {
     text-decoration: none;
