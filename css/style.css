@@ -721,9 +721,18 @@ footer .social-links li {
   margin: 0 10px;
 }
 
-footer .social-links li:hover {
+footer .social-links li:hover {  
   background-color: transparent;
+  animation-name: background-color; /*adding animations to the social links */
+  animation-duration: 2s;
+  animation-fill-mode: forwards; 
 }
+@keyframes background-color {
+  100% {
+    background-color: #4791d0;
+  }
+}
+
 
 .footer-copyright {
   display: flex;
