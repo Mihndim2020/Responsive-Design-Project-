@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
 }
+$main-fonts: ars maquette, helvetica neue, arial, sans-serif;
 
 body {
-  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-family: $main-fonts;
   font-size: 14px;
   line-height: 1.4;
   overflow-x: hidden;
@@ -341,13 +342,20 @@ header .upper-nav {
     align-items: center;
     width: 100%;
     z-index: 5;
+
+    li {
+      list-style: none;
+      margin: 0 10px;
+      white-space: nowrap; /* implementation of nesting */
+    }
   }
 
+  /*
   .lower-nav-bar ul li {
     list-style: none;
     margin: 0 10px;
     white-space: nowrap;
-  }
+  } */
 
   .lower-nav-bar ul li a {
     text-decoration: none;
@@ -691,11 +699,11 @@ footer .footer-menu-links {
   display: flex;
   align-items: center;
   padding: 30px;
-}
 
-footer .footer-menu-links li {
-  padding-left: 15px;
-  padding-right: 15px;
+  li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 footer .footer-menu-links li a:hover {
