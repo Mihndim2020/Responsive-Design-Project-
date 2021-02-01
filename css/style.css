@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
 }
+$main-fonts: ARS Maquette, Helvetica Neue, Arial, sans-serif;
 
 body {
-  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-family: $main-fonts;
   font-size: 14px;
   line-height: 1.4;
   overflow-x: hidden;
@@ -383,8 +384,7 @@ header .upper-nav {
 /* styling the hero area */
 
 .bigger-left {
-  background-image:
-    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),
     url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/the-medium-feat-img-796x417.png");
   background-repeat: no-repeat;
   background-size: cover;
